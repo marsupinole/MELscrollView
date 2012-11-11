@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MELscrollViewViewController : UIViewController
+@interface MELscrollViewViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *view1;
 @property (weak, nonatomic) IBOutlet UIScrollView *view2;
 @property (weak, nonatomic) IBOutlet UIScrollView *view3;
-@property (weak, nonatomic) IBOutlet UIScrollView *view4;
+@property (retain, nonatomic) IBOutlet UITableView *view4;
+@property (nonatomic, strong) NSMutableArray *carMakes;
 
 @end

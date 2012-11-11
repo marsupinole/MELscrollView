@@ -14,13 +14,17 @@
 
 @implementation MELscrollViewViewController
 
-@synthesize view1, view2, view3, view4;
+@synthesize view1, view2, view3, view4, carMakes;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.carMakes = [NSMutableArray array];
 	
-    view1.pagingEnabled = YES;
+    [carMakes addObject:@"mike"]; [carMakes addObject:@"john"]; [carMakes addObject:@"tom"]; [carMakes addObject:@"gene"]; [carMakes addObject:@"lorenzo"]; [carMakes addObject:@"gabriel"];
+    
+    
     
     NSInteger numberOfViews = 3;
     
@@ -36,7 +40,10 @@
     UIView *awesomeView2 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 400, 500)];
     awesomeView2.backgroundColor = [UIColor colorWithRed:0.5/2 green:0.5 blue:0.5 alpha:1];
     [view2 addSubview:awesomeView2];
-    //[self.view4 scrollRectToVisible:awesomeView2 animated:YES];
+    
+    [self.view4 reloadData];
+    self.view4.delegate = self;
+    self.view4.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,4 +52,26 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [carMakes count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    NSString *cellData = [carMakes objectAtIndex:indexPath.row];
+    cell.textLabel.text = cellData;
+    cell.textLabel.textColor = [UIColor redColor];
+    return cell;
+}
 @end
