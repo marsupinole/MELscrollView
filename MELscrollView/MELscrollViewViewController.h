@@ -10,4 +10,9 @@
 
 @interface MELscrollViewViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIScrollView *view1;
+@property (weak, nonatomic) IBOutlet UIScrollView *view2;
+@property (weak, nonatomic) IBOutlet UIScrollView *view3;
+@property (weak, nonatomic) IBOutlet UIScrollView *view4;
+
 @end
