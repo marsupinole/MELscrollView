@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25F97A91164F2BB800B1E7E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F97A90164F2BB800B1E7E9 /* UIKit.framework */; };
+		25F97A93164F2BB800B1E7E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F97A92164F2BB800B1E7E9 /* Foundation.framework */; };
+		25F97A95164F2BB800B1E7E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F97A94164F2BB800B1E7E9 /* CoreGraphics.framework */; };
+		25F97A9B164F2BB800B1E7E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25F97A99164F2BB800B1E7E9 /* InfoPlist.strings */; };
+		25F97A9D164F2BB800B1E7E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F97A9C164F2BB800B1E7E9 /* main.m */; };
+		25F97AA1164F2BB800B1E7E9 /* MELscrollViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F97AA0164F2BB800B1E7E9 /* MELscrollViewAppDelegate.m */; };
+		25F97AA3164F2BB800B1E7E9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 25F97AA2164F2BB800B1E7E9 /* Default.png */; };
+		25F97AA5164F2BB800B1E7E9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25F97AA4164F2BB800B1E7E9 /* Default@2x.png */; };
+		25F97AA7164F2BB800B1E7E9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25F97AA6164F2BB800B1E7E9 /* Default-568h@2x.png */; };
+		25F97AAA164F2BB800B1E7E9 /* MELscrollViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F97AA9164F2BB800B1E7E9 /* MELscrollViewViewController.m */; };
+		25F97AAD164F2BB800B1E7E9 /* MELscrollViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25F97AAB164F2BB800B1E7E9 /* MELscrollViewViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		25F97A8C164F2BB800B1E7E9 /* MELscrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MELscrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25F97A90164F2BB800B1E7E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		25F97A92164F2BB800B1E7E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		25F97A94164F2BB800B1E7E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		25F97A98164F2BB800B1E7E9 /* MELscrollView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MELscrollView-Info.plist"; sourceTree = "<group>"; };
+		25F97A9A164F2BB800B1E7E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		25F97A9C164F2BB800B1E7E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		25F97A9E164F2BB800B1E7E9 /* MELscrollView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MELscrollView-Prefix.pch"; sourceTree = "<group>"; };
+		25F97A9F164F2BB800B1E7E9 /* MELscrollViewAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MELscrollViewAppDelegate.h; sourceTree = "<group>"; };
+		25F97AA0164F2BB800B1E7E9 /* MELscrollViewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MELscrollViewAppDelegate.m; sourceTree = "<group>"; };
+		25F97AA2164F2BB800B1E7E9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		25F97AA4164F2BB800B1E7E9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		25F97AA6164F2BB800B1E7E9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		25F97AA8164F2BB800B1E7E9 /* MELscrollViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MELscrollViewViewController.h; sourceTree = "<group>"; };
+		25F97AA9164F2BB800B1E7E9 /* MELscrollViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MELscrollViewViewController.m; sourceTree = "<group>"; };
+		25F97AAC164F2BB800B1E7E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MELscrollViewViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25F97A89164F2BB800B1E7E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25F97A91164F2BB800B1E7E9 /* UIKit.framework in Frameworks */,
+				25F97A93164F2BB800B1E7E9 /* Foundation.framework in Frameworks */,
+				25F97A95164F2BB800B1E7E9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25F97A81164F2BB800B1E7E9 = {
+			isa = PBXGroup;
+			children = (
+				25F97A96164F2BB800B1E7E9 /* MELscrollView */,
+				25F97A8F164F2BB800B1E7E9 /* Frameworks */,
+				25F97A8D164F2BB800B1E7E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25F97A8D164F2BB800B1E7E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25F97A8C164F2BB800B1E7E9 /* MELscrollView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25F97A8F164F2BB800B1E7E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25F97A90164F2BB800B1E7E9 /* UIKit.framework */,
+				25F97A92164F2BB800B1E7E9 /* Foundation.framework */,
+				25F97A94164F2BB800B1E7E9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25F97A96164F2BB800B1E7E9 /* MELscrollView */ = {
+			isa = PBXGroup;
+			children = (
+				25F97A9F164F2BB800B1E7E9 /* MELscrollViewAppDelegate.h */,
+				25F97AA0164F2BB800B1E7E9 /* MELscrollViewAppDelegate.m */,
+				25F97AA8164F2BB800B1E7E9 /* MELscrollViewViewController.h */,
+				25F97AA9164F2BB800B1E7E9 /* MELscrollViewViewController.m */,
+				25F97AAB164F2BB800B1E7E9 /* MELscrollViewViewController.xib */,
+				25F97A97164F2BB800B1E7E9 /* Supporting Files */,
+			);
+			path = MELscrollView;
+			sourceTree = "<group>";
+		};
+		25F97A97164F2BB800B1E7E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25F97A98164F2BB800B1E7E9 /* MELscrollView-Info.plist */,
+				25F97A99164F2BB800B1E7E9 /* InfoPlist.strings */,
+				25F97A9C164F2BB800B1E7E9 /* main.m */,
+				25F97A9E164F2BB800B1E7E9 /* MELscrollView-Prefix.pch */,
+				25F97AA2164F2BB800B1E7E9 /* Default.png */,
+				25F97AA4164F2BB800B1E7E9 /* Default@2x.png */,
+				25F97AA6164F2BB800B1E7E9 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25F97A8B164F2BB800B1E7E9 /* MELscrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25F97AB0164F2BB800B1E7E9 /* Build configuration list for PBXNativeTarget "MELscrollView" */;
+			buildPhases = (
+				25F97A88164F2BB800B1E7E9 /* Sources */,
+				25F97A89164F2BB800B1E7E9 /* Frameworks */,
+				25F97A8A164F2BB800B1E7E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MELscrollView;
+			productName = MELscrollView;
+			productReference = 25F97A8C164F2BB800B1E7E9 /* MELscrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25F97A83164F2BB800B1E7E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MELscrollView;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = prepcloud;
+			};
+			buildConfigurationList = 25F97A86164F2BB800B1E7E9 /* Build configuration list for PBXProject "MELscrollView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 25F97A81164F2BB800B1E7E9;
+			productRefGroup = 25F97A8D164F2BB800B1E7E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25F97A8B164F2BB800B1E7E9 /* MELscrollView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25F97A8A164F2BB800B1E7E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25F97A9B164F2BB800B1E7E9 /* InfoPlist.strings in Resources */,
+				25F97AA3164F2BB800B1E7E9 /* Default.png in Resources */,
+				25F97AA5164F2BB800B1E7E9 /* Default@2x.png in Resources */,
+				25F97AA7164F2BB800B1E7E9 /* Default-568h@2x.png in Resources */,
+				25F97AAD164F2BB800B1E7E9 /* MELscrollViewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25F97A88164F2BB800B1E7E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25F97A9D164F2BB800B1E7E9 /* main.m in Sources */,
+				25F97AA1164F2BB800B1E7E9 /* MELscrollViewAppDelegate.m in Sources */,
+				25F97AAA164F2BB800B1E7E9 /* MELscrollViewViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		25F97A99164F2BB800B1E7E9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25F97A9A164F2BB800B1E7E9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		25F97AAB164F2BB800B1E7E9 /* MELscrollViewViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25F97AAC164F2BB800B1E7E9 /* en */,
+			);
+			name = MELscrollViewViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25F97AAE164F2BB800B1E7E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		25F97AAF164F2BB800B1E7E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25F97AB1164F2BB800B1E7E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MELscrollView/MELscrollView-Prefix.pch";
+				INFOPLIST_FILE = "MELscrollView/MELscrollView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		25F97AB2164F2BB800B1E7E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MELscrollView/MELscrollView-Prefix.pch";
+				INFOPLIST_FILE = "MELscrollView/MELscrollView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25F97A86164F2BB800B1E7E9 /* Build configuration list for PBXProject "MELscrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25F97AAE164F2BB800B1E7E9 /* Debug */,
+				25F97AAF164F2BB800B1E7E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25F97AB0164F2BB800B1E7E9 /* Build configuration list for PBXNativeTarget "MELscrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25F97AB1164F2BB800B1E7E9 /* Debug */,
+				25F97AB2164F2BB800B1E7E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25F97A83164F2BB800B1E7E9 /* Project object */;
+}
