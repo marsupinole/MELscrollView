@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "EasyTableView.h"
+#import "showJustEasyTable.h"
 
 @interface MELscrollViewViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
 
 @property (weak, nonatomic) IBOutlet UIScrollView *view1;
 @property (weak, nonatomic) IBOutlet UIScrollView *view2;
@@ -17,5 +19,8 @@
 @property (retain, nonatomic) IBOutlet UITableView *view4;
 @property (nonatomic, strong) NSMutableArray *carMakes;
 @property (nonatomic) EasyTableView *verticalView;
+@property (retain, nonatomic) showJustEasyTable *justShowTheFuckingTable;
+@property (weak, nonatomic) IBOutlet UIButton *showJustEasyTable;
 
+- (IBAction)showJustEasyTable:(id)sender;
 @end

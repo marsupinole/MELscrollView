@@ -31,7 +31,7 @@
 
 @implementation MELscrollViewViewController
 
-@synthesize view1, view2, view3, view4, carMakes, verticalView;
+@synthesize view1, view2, view3, view4, carMakes, verticalView, showJustEasyTable, justShowTheFuckingTable;
 
 - (void)viewDidLoad
 {
@@ -101,6 +101,12 @@
     return cell;
 }
 
+- (IBAction)showJustEasyTable:(id)sender
+{
+    self.justShowTheFuckingTable = [[showJustEasyTable alloc] initWithNibName:@"showJustEasyTable" bundle:nil];
+    [self presentModalViewController:self.justShowTheFuckingTable animated:YES];
+}
+
 //start EasyTable code
 
 - (void)setupVerticalView
@@ -120,7 +126,7 @@
     verticalView.tableView.contentInset	= UIEdgeInsetsMake(0, 0, HORIZONTAL_TABLEVIEW_HEIGHT, 0);
     
     view3.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height);
-    
+    [view3 setBackgroundColor:[UIColor blackColor]];
     [view3 addSubview:verticalView];
 }
 
