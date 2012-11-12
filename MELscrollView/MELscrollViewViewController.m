@@ -56,7 +56,7 @@
     
     view1.contentSize = CGSizeMake(self.view.frame.size.width * numberOfViews, self.view.frame.size.height);
     
-    UITableView *table1 = [[UITableView alloc] initWithFrame:CGRectMake(200, 600, 100, 400)];
+    //UITableView *table1 = [[UITableView alloc] initWithFrame:CGRectMake(200, 600, 100, 400)];
     
     //view4.frame = CGRectMake(200, 600, 100, 400);
     
@@ -101,6 +101,8 @@
     return cell;
 }
 
+//start EasyTable code
+
 - (void)setupVerticalView
 {
     CGRect frameRect = CGRectMake(PORTRAIT_WIDTH - VERTICAL_TABLEVIEW_WIDTH, 0, VERTICAL_TABLEVIEW_WIDTH, LANDSCAPE_HEIGHT);
@@ -108,16 +110,18 @@
     self.verticalView = view;
     
     verticalView.delegate = self;
-    verticalView.tableView.backgroundColor	= TABLE_BACKGROUND_COLOR;
-    verticalView.tableView.allowsSelection	= YES;
-    verticalView.tableView.separatorColor	= [[UIColor blackColor] colorWithAlphaComponent:0.1];
-    verticalView.cellBackgroundColor	= [[UIColor blackColor] colorWithAlphaComponent:0.1];
-    verticalView.autoresizingMask	= UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    verticalView.tableView.backgroundColor = TABLE_BACKGROUND_COLOR;
+    verticalView.tableView.allowsSelection = YES;
+    verticalView.tableView.separatorColor = [[UIColor blackColor] colorWithAlphaComponent:0.1];
+    verticalView.cellBackgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.1];
+    verticalView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
     // Allow verticalView to scroll up and completely clear the horizontalView
     verticalView.tableView.contentInset	= UIEdgeInsetsMake(0, 0, HORIZONTAL_TABLEVIEW_HEIGHT, 0);
     
-    [self.view addSubview:verticalView];
+    view3.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height);
+    
+    [view3 addSubview:verticalView];
 }
 
 //optional methods for having multiple sections
@@ -130,6 +134,8 @@
 //{
 //    return NUM_OF_CELLS;
 //}
+
+
 
 - (UIView *)easyTableView:(EasyTableView *)easyTableView viewForRect:(CGRect)rect
 {
