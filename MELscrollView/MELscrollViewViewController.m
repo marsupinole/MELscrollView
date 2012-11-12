@@ -37,13 +37,20 @@
     
     view1.contentSize = CGSizeMake(self.view.frame.size.width * numberOfViews, self.view.frame.size.height);
     
+    UITableView *table1 = [[UITableView alloc] initWithFrame:CGRectMake(200, 600, 100, 400)];
+    
+    //view4.frame = CGRectMake(200, 600, 100, 400);
+    
     UIView *awesomeView2 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 400, 500)];
     awesomeView2.backgroundColor = [UIColor colorWithRed:0.5/2 green:0.5 blue:0.5 alpha:1];
     [view2 addSubview:awesomeView2];
     
-    [self.view4 reloadData];
-    self.view4.delegate = self;
-    self.view4.dataSource = self;
+    //view4.backgroundColor = [UIColor redColor];
+    view2.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height);
+    
+    //[self.view4 reloadData];
+    view4.delegate = self;
+    view4.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning
