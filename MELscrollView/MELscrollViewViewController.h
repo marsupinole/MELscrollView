@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EasyTableView.h"
 
 @interface MELscrollViewViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
@@ -15,5 +16,6 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *view3;
 @property (retain, nonatomic) IBOutlet UITableView *view4;
 @property (nonatomic, strong) NSMutableArray *carMakes;
+@property (nonatomic) EasyTableView *verticalView;
 
 @end
