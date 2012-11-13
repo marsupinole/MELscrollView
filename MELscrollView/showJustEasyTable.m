@@ -1,17 +1,32 @@
 #import "showJustEasyTable.h"
 
+//still don't understand what this does
 #define SHOW_MULTIPLE_SECTIONS 1
-#define PORTRAIT_WIDTH 768
+
+//the a in CGRectMake(a, b, c, d)
+#define PORTRAIT_WIDTH 500
+
+//the b in CGRectMake(a, b, c, d)
+#define PORTRAIT_HEIGHT 50
+
+//don't understand this
 #define LANDSCAPE_HEIGHT (1024-20)
-#define HORIZONTAL_TABLEVIEW_HEIGHT 140
-#define VERTICAL_TABLEVIEW_WIDTH 180
+
+//the overall height of the table
+#define HORIZONTAL_TABLEVIEW_HEIGHT 40
+
+//the overall width of the table
+#define VERTICAL_TABLEVIEW_WIDTH 300
+
 #define TABLE_BACKGROUND_COLOR [UIColor clearColor]
 
+//don't know
 #define BORDER_VIEW_TAG 10
 
 #ifdef SHOW_MULTIPLE_SECTIONS
-#define NUM_OF_CELLS 10
-#define NUM_OF_SECTIONS 2
+//the total number of cells
+#define NUM_OF_CELLS 30
+#define NUM_OF_SECTIONS 4
 #else
 #define NUM_OF_CELLS 21
 #endif
@@ -34,7 +49,7 @@
 
 - (void)setupVerticalView2
 {
-    CGRect frameRect = CGRectMake(PORTRAIT_WIDTH - VERTICAL_TABLEVIEW_WIDTH, 0, VERTICAL_TABLEVIEW_WIDTH, LANDSCAPE_HEIGHT);
+    CGRect frameRect = CGRectMake(PORTRAIT_WIDTH - VERTICAL_TABLEVIEW_WIDTH, PORTRAIT_HEIGHT, VERTICAL_TABLEVIEW_WIDTH, LANDSCAPE_HEIGHT);
     EasyTableView *view	= [[EasyTableView alloc] initWithFrame:frameRect numberOfRows:NUM_OF_CELLS ofHeight:HORIZONTAL_TABLEVIEW_HEIGHT];
     self.verticalView2 = view;
     
@@ -46,7 +61,7 @@
     verticalView2.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
     // Allow verticalView to scroll up and completely clear the horizontalView
-    verticalView2.tableView.contentInset	= UIEdgeInsetsMake(0, 0, HORIZONTAL_TABLEVIEW_HEIGHT, 0);
+    verticalView2.tableView.contentInset = UIEdgeInsetsMake(0, 0, HORIZONTAL_TABLEVIEW_HEIGHT, 0);
     
     //view3.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height);
     
