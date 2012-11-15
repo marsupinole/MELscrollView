@@ -11,8 +11,9 @@
 
 @interface showJustEasyTable : UIViewController
 
-//@property (retain, nonatomic) IBOutlet UITableView *view4;
-//@property (nonatomic, strong) NSMutableArray *carMakes;
+@property (weak, nonatomic) IBOutlet UIScrollView *view4;
 @property (nonatomic) EasyTableView *verticalView2;
+@property (nonatomic) EasyTableView *verticalView3;
+@property (nonatomic, strong) NSMutableArray *carMakes2;
 
 @end
